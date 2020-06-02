@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Bio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style>
+    img {
+        margin-top: 10px;
+        width: 300px;
+        height: 220px;
+        border: 2px black solid;
+
+    }
+
+
+    .col-margin {
+
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-right: 155px;
+    }
+
+    h5 {
+        background: yellow;
+        width: 300px;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    h5:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+
+        /* When the animation is finished, start again */
+        /* animation-iteration-count: infinite; */
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+    #navbarNav {
+        margin-right: 130px;
+    }
+
+    .navbar {
+        background-color: #85144b;
+        border-bottom: 5px black solid;
+    }
+
+    #name:hover {
+        background-color: #FFFFFF33;
+    }
+
+    #name {
+        /* height: 56px; */
+        margin-left: 100px;
+        padding: 25px;
+        background-color: white;
+        color: white;
+        font-size: 20px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        text-decoration: none;
+
+    }
+
+    @keyframes example {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: #327da8;
+        }
+    }
+
+    .pics {
+        margin-top: 50px;
+        border: lightgrey solid .5px;
+        border-radius: 5%;
+        width: 50%;
+    }
+
+    body {
+        background-color: #a83232;
+    }
+
+    h4 {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .bio-section {
+        border: lightgrey solid .5px;
+        border-radius: 8px;
+        margin-top: 120px;
+        background-color: whitesmoke;
+        border: 2px black solid;
+    }
+
+    .bio-text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer {
+        width: 1440px;
+        margin-top: 240px;
+        background-color: #327da8;
+        text-align: center;
+        color: white;
+
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="name" class="navbar-brand" href="#">Jake Rhoads</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container bio-section">
+        <div class="row">
+            <div class="col-md-6 bio-text">
+                My name is Jake Rhoads. I have been a Spanish teacher in the Richmond and Hanover school system over the
+                past 3 years. I want to make the transition into programming, so I enrolled in this bootcamp. I would
+                like to do something in terms of developing foreign language learning apps, e.g. Babbel, Rosetta Stone,
+                DuoLingo, etc. Both of my parents live in Richmond and my brother Daniel lives in Spain with his wife
+                Silvia. They have lived there for the past 4 years. She is Italian and Daniel has been learning so that
+                they can speak in Italian from time to time. I love languages, so I took this on as a quarantine
+                challeng ontop of focusing on programming.
+            </div>
+            <div class="col-md-3 bio-image">
+                <img src="project-photos/IMG_8319.JPG" alt="chris griffin">
+                <caption>Picture of my brother Dan and I <strong>(in darker framed glasses)</strong></caption>
+                <!-- <p class="col-md-12"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde natus laborum itaque quasi
+                    sapiente accusamus ipsum enim ex impedit.</p> -->
+            </div>
+        </div>
+    </div>
+    <footer class="container footer">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>&copy; Jake Rhoads, Inc.</h>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+    </script>
+</body>
+
+</html>
