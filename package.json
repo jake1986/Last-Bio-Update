@@ -1,0 +1,25 @@
+{
+  "name": "Last-Bio-Update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake1986/Last-Bio-Update.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jake1986/Last-Bio-Update/issues"
+  },
+  "homepage": "https://github.com/jake1986/Last-Bio-Update#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security"
+  }
+}
